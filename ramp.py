@@ -14,5 +14,5 @@ class Ramp:
         print("Ramp height:" + str(self.height))
         print("Ramp angle:" + str(self.angle))
 
-    def calcCurrent0(self,t,myProjectile):
-        self.current0=(self.length*math.cos(self.angle)-myProjectile.x)*math.tan(self.angle)
+    def calcCurrent0(self, projx):
+        self.current0 = (self.length * math.cos(self.angle) - projx) * math.tan(self.angle)
